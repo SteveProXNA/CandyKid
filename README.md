@@ -1,5 +1,5 @@
 # Candy Kid
-Super cool 80s retro arcade simple maze chase video game!
+Super cool 80s retro arcade simple maze chase video game.
 
 ###### RELEASE
 Sunday, 15th November 2015
@@ -23,7 +23,7 @@ http://github.com/SteveProXNA/CandyKid
 - You Tube http://www.youtube.com/watch?v=2ZPBw24cEfQ
 
 ###### CREDITS
-Special thanks to Grandstand Leisure from New Zealand in September-1984
+Special thanks to Grandstand Leisure from New Zealand in September 1984.
 <br />
 Original source code published in Sega magazine [http://bit.ly/2a5TqDw]
 
@@ -33,7 +33,7 @@ StevePro Studios (formerly known as StevePro Solutions) is an independent game d
 ###### BLOG
 For more infomation please check out the following blog posts:
 - Sun, 31-May-2015 "Candy Kid Video Game" [http://bit.ly/1GJVo2z]
-- Sat, 04-Jul-2015 "Candy Kid Progger Art" [http://bit.ly/1ImoCtY]
+- Sat, 04-Jul-2015 "Candy Kid Programmer Art" [http://bit.ly/1ImoCtY]
 - Sat, 31-Oct-2015 "Candy Kid How to Play" [http://bit.ly/1MQepqA]
 - Sun, 15-Nov-2015 "Candy Kid is Live" [http://bit.ly/1kgIKEC]
 
