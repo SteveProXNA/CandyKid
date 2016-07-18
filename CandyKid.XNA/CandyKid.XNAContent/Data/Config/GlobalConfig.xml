@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GlobalConfigData>
+	<ScreenType>Title</ScreenType>
+	<UseKillTrees>false</UseKillTrees>
+	<UseOpenExits>true</UseOpenExits>
+	<UsePlayMusic>true</UsePlayMusic>
+	<UsePlaySound>true</UsePlaySound>
+	<ScoreLives>3</ScoreLives>
+	<ClockLevel>100</ClockLevel>
+	<ScoreWorld>1</ScoreWorld>
+	<ScoreRound>1</ScoreRound>
+	<TotalWorld>10</TotalWorld>
+	<TotalRound>10</TotalRound>
+	<ExtraLives>20000</ExtraLives>
+	<MoveAdriana>true</MoveAdriana>
+	<MoveSuzanne>true</MoveSuzanne>
+	<MoveStevePro>true</MoveStevePro>
+	<GamerVelIndex>0</GamerVelIndex>
+	<EnemyVelIndex>0</EnemyVelIndex>
+	<NewArrowIndex>0</NewArrowIndex>
+	<SplashDelay>5000</SplashDelay>
+	<TitleDelay>12000</TitleDelay>
+	<DemoDelay>30000</DemoDelay>
+	<LoadDelay>2000</LoadDelay>
+	<CompDelay>5000</CompDelay>
+	<DeadDelay>5000</DeadDelay>
+	<OverDelay>7500</OverDelay>
+	<BeatDelay>17000</BeatDelay>
+	<UnlockDelay>15000</UnlockDelay>
+	<LoadZoomOut>true</LoadZoomOut>
+	<IsInGodMode>false</IsInGodMode>
+	<CanContinue>true</CanContinue>
+	<QuitsToExit>false</QuitsToExit>
+	<ResetEnemies>true</ResetEnemies>
+	<RefreshGame>false</RefreshGame>
+</GlobalConfigData>

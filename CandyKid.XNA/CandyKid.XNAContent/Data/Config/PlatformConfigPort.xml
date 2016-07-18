@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PlatformConfigData>
+	<IsFullScreen>true</IsFullScreen>
+	<GamerCrashMin>16</GamerCrashMin>
+	<GamerCrashMax>24</GamerCrashMax>
+	<PlayerVelocityStr>25,30,35,40</PlayerVelocityStr>
+	<AdrianaVelocityStr>15,20,25,30</AdrianaVelocityStr>
+	<SuzanneVelocityStr>12,16,20,24</SuzanneVelocityStr>
+	<SteveProVelocityStr>20,30,40,50</SteveProVelocityStr>
+	<AdrianaAttackerStr>10,15,20,25</AdrianaAttackerStr>
+	<SuzanneAttackerStr>25,40,55,60</SuzanneAttackerStr>
+	<SteveProAttackerStr>50,75,90,100</SteveProAttackerStr>
+</PlatformConfigData>
