@@ -1,0 +1,1 @@
+Dummy file required to check-in Content folder for System Tests symbolic link.
