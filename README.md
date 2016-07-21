@@ -13,7 +13,9 @@ Sunday, 15th November 2015
 ###### TOOLS
 - C#/.NET Framework 4.0
 - XNA Game Studio 4.0
+- MonoGame 3.4 ports
 - Visual Studio 2010
+- Xamarin Studio 5.9.8
 
 ###### SOURCE CODE
 http://github.com/SteveProXNA/CandyKid
