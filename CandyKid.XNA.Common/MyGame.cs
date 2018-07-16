@@ -93,7 +93,7 @@ namespace WindowsGame
 		{
 			Manager.InputManager.Update(gameTime);
 
-#if WINDOWS
+#if WINDOWS && DEBUG
 			if (BaseData.QuitsToExit)
 			{
 				Boolean escape = Manager.InputManager.Escape();
