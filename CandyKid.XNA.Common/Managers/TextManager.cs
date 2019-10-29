@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Reflection;
 using Microsoft.Xna.Framework;
 using WindowsGame.Data;
@@ -47,13 +48,8 @@ namespace WindowsGame.Managers
 		}
 		public void InitializeBuild()
 		{
-#if !WINDOWS_PHONE
-			Assembly assembly = Assembly.GetEntryAssembly() ?? Assembly.GetCallingAssembly();
-#else
-			Assembly assembly = Assembly.GetCallingAssembly();
-#endif
-			// Get AssemblyVersion from calling AssemblyInfo.cs
-			InitializeBuild(assembly.FullName);
+			String assemblyName = Assembly.GetCallingAssembly().FullName;
+			InitializeBuild(assemblyName);
 		}
 		public void InitializeBuild(String assemblyName)
 		{
@@ -93,8 +89,8 @@ namespace WindowsGame.Managers
 				}
 
 				String[] items = line.Split(DELIM);
-				SByte x = Convert.ToSByte(items[0]);
-				SByte y = Convert.ToSByte(items[1]);
+				SByte x = Convert.ToSByte(items[0], CultureInfo.InvariantCulture);
+				SByte y = Convert.ToSByte(items[1], CultureInfo.InvariantCulture);
 				String message = items[2];
 
 				Vector2 postion = GetTextPosition(x, y, textsSize, offsetX, fontX, fontY);
@@ -124,8 +120,8 @@ namespace WindowsGame.Managers
 				}
 
 				String[] items = line.Split(DELIM);
-				SByte x = Convert.ToSByte(items[0]);
-				SByte y = Convert.ToSByte(items[1]);
+				SByte x = Convert.ToSByte(items[0], CultureInfo.InvariantCulture);
+				SByte y = Convert.ToSByte(items[1], CultureInfo.InvariantCulture);
 				String message = items[2];
 				String[] list = message.Split(PIPES);
 

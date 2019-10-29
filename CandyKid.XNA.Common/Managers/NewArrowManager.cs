@@ -10,7 +10,6 @@ namespace WindowsGame.Managers
 {
 	public interface INewArrowManager
 	{
-		void Initialize();
 		void LoadContent();
 		void Draw(Direction direction);
 
@@ -25,11 +24,6 @@ namespace WindowsGame.Managers
 
 		private NewArrow upArrow, downArrow, leftArrow, rightArrow;
 		private Rectangle normalVert, normalHorz, invertVert, invertHorz;
-
-		public void Initialize()
-		{
-			QuadArrowDictionary = new Dictionary<Quadrant, NewArrow>(Constants.ARROW_NUMBER);
-		}
 
 		public void LoadContent()
 		{
@@ -51,6 +45,7 @@ namespace WindowsGame.Managers
 			newArrowList.Add(leftArrow);
 			newArrowList.Add(rightArrow);
 
+			QuadArrowDictionary = new Dictionary<Quadrant, NewArrow>(Constants.ARROW_NUMBER);
 			SetQuadrants(BaseData.NewArrowIndex);
 		}
 
@@ -61,21 +56,17 @@ namespace WindowsGame.Managers
 			Byte candySize = BaseData.CandySize;
 			Byte tileRatio = BaseData.TileRatio;
 
-			var dictionary0 = new Dictionary<Quadrant, Vector2>(Constants.ARROW_NUMBER)
-			{
-				{Quadrant.TopLeft, new Vector2(0 * gameOffsetX + 0 * tilesSize + tileRatio, 2 * tilesSize + candySize)},
-				{Quadrant.BotLeft, new Vector2(0 * gameOffsetX + 0 * tilesSize + tileRatio, tileRatio * tilesSize + 0)},
-				{Quadrant.TopRight, new Vector2(1 * gameOffsetX + candySize * tilesSize + tileRatio, 2 * tilesSize + candySize)},
-				{Quadrant.BotRight, new Vector2(1 * gameOffsetX + candySize * tilesSize + tileRatio, tileRatio * tilesSize + 0)}
-			};
+			var dictionary0 = new Dictionary<Quadrant, Vector2>(Constants.ARROW_NUMBER);
+			dictionary0.Add(Quadrant.TopLeft, new Vector2(0 * gameOffsetX + 0 * tilesSize + tileRatio, 2 * tilesSize + candySize));
+			dictionary0.Add(Quadrant.BotLeft, new Vector2(0 * gameOffsetX + 0 * tilesSize + tileRatio, tileRatio * tilesSize + 0));
+			dictionary0.Add(Quadrant.TopRight, new Vector2(1 * gameOffsetX + candySize * tilesSize + tileRatio, 2 * tilesSize + candySize));
+			dictionary0.Add(Quadrant.BotRight, new Vector2(1 * gameOffsetX + candySize * tilesSize + tileRatio, tileRatio * tilesSize + 0));
 
-			var dictionary1 = new Dictionary<Quadrant, Vector2>(Constants.ARROW_NUMBER)
-			{
-				{Quadrant.TopLeft, new Vector2((240 - 64) / 2 + 560, 16 + 160)},
-				{Quadrant.BotLeft, new Vector2((240 - 64) / 2 + 560, 400)},
-				{Quadrant.TopRight, new Vector2(8 + 560, 128 + 160)},
-				{Quadrant.BotRight, new Vector2(240 - 64 - 8 + 560, 128 + 160)}
-			};
+			var dictionary1 = new Dictionary<Quadrant, Vector2>(Constants.ARROW_NUMBER);
+			dictionary1.Add(Quadrant.TopLeft, new Vector2((240 - 64) / 2 + 560, 16 + 160));
+			dictionary1.Add(Quadrant.BotLeft, new Vector2((240 - 64) / 2 + 560, 400));
+			dictionary1.Add(Quadrant.TopRight, new Vector2(8 + 560, 128 + 160));
+			dictionary1.Add(Quadrant.BotRight, new Vector2(240 - 64 - 8 + 560, 128 + 160));
 
 			var dictionary = new Dictionary<Quadrant, Vector2>[Constants.MAX_LAYOUT];
 			dictionary[(Byte)LayoutType.Custom] = dictionary0;

@@ -61,7 +61,6 @@ namespace WindowsGame
 			Manager.EntityManager.Initialize();
 			Manager.EventManager.Initialize();
 			Manager.MoveManager.Initialize();
-			Manager.NewArrowManager.Initialize();
 			Manager.NumberManager.Initialize();
 			Manager.TextManager.Initialize();
 			Manager.TextManager.InitializeBuild();
@@ -93,7 +92,7 @@ namespace WindowsGame
 		{
 			Manager.InputManager.Update(gameTime);
 
-#if WINDOWS && DEBUG
+#if WINDOWS
 			if (BaseData.QuitsToExit)
 			{
 				Boolean escape = Manager.InputManager.Escape();

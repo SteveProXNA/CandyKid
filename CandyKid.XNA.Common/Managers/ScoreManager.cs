@@ -17,7 +17,6 @@ namespace WindowsGame.Managers
 		void ResetLevel();
 		void ResetLives();
 		void ResetScore();
-
 		void InsertLevel(UInt16 value);
 		void InsertLevel(Byte world, Byte round);
 		void Insert(ScoreType scoreType, UInt32 value);
@@ -84,7 +83,6 @@ namespace WindowsGame.Managers
 			Insert(ScoreType.Score, 0);
 			extraObjValue = 0;
 		}
-
 		public void InsertLives(UInt16 value)
 		{
 			Insert(ScoreType.Lives, value);
@@ -93,6 +91,7 @@ namespace WindowsGame.Managers
 		{
 			Insert(ScoreType.Level, value);
 		}
+
 		public void InsertLevel(Byte world, Byte round)
 		{
 			Insert(ScoreType.World, world);

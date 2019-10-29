@@ -96,7 +96,6 @@ namespace WindowsGame.Managers
 			};
 		}
 
-		/* Same method using Reflection instead (hardcode namespace).
 		private static Dictionary<ScreenType, IScreen> GetScreensX()
 		{
 			var screens = new Dictionary<ScreenType, IScreen>();
@@ -122,7 +121,6 @@ namespace WindowsGame.Managers
 
 			return screens;
 		}
-		*/
 
 	}
 }

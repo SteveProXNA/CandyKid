@@ -89,7 +89,7 @@ namespace WindowsGame.UnitTests.Managers
 		public void ConvertEventToBonusTest()
 		{
 			UInt16 bonus = ScoreManager.ConvertEventToBonus(EventType.EatBonus1);
-			Assert.That(bonus, Is.EqualTo(Constants.BONUS1));
+			Assert.That(bonus, Is.EqualTo(Constants.BONUS_SCORE[0]));
 		}
 
 		[TearDown]

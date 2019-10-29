@@ -31,6 +31,7 @@ namespace WindowsGame.Managers
 		Char ConvertTileToChar(TileType tileType);
 		void Draw();
 		void Draw(Boolean locked);
+		//void Draw(TileType[,] levelData, IDictionary<Byte, Vector2> tilesData, IDictionary<Byte, Rectangle> rectsData);
 
 		Vector2 GetCandyVector2(Byte key);
 		Vector2 GetBonusVector2(Byte key);

@@ -10,8 +10,6 @@ namespace WindowsGame.Managers
 	public interface IStorageManager
 	{
 		void Init();
-		void Init(Boolean trial);
-
 		void Load();
 		void Save();
 	}
@@ -24,11 +22,7 @@ namespace WindowsGame.Managers
 
 		public void Init()
 		{
-			Init(BaseData.TrialedGame);
-		}
-		public void Init(Boolean trial)
-		{
-			String suffix = trial ? Constants.FREE_TEXT : String.Empty;
+			String suffix = BaseData.TrialedGame ? Constants.FREE_TEXT : String.Empty;
 			fileName = String.Format("CandyKid{0}.xml", suffix);
 		}
 

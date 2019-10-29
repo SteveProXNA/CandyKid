@@ -11,7 +11,6 @@ namespace WindowsGame.UnitTests.Managers
 		{
 			// System under test.
 			NewArrowManager = new NewArrowManager();
-			NewArrowManager.Initialize();
 			base.SetUp();
 		}
 

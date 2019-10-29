@@ -10,7 +10,7 @@ namespace WindowsGame.SystemTests.Managers
 		{
 			// System under test.
 			StorageManager = MyGame.Manager.StorageManager;
-			StorageManager.Init(true);
+			StorageManager.Init();
 		}
 
 		[Test]

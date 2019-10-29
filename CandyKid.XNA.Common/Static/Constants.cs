@@ -49,11 +49,7 @@ namespace WindowsGame.Static
 		public const Byte ENEMYVEL_INDEX = 3;
 		public const Byte NEWARROW_INDEX = 4;
 
-		public const UInt16 BONUS1 = 100;
-		public const UInt16 BONUS2 = 200;
-		public const UInt16 BONUS3 = 400;
-		public const UInt16 BONUS4 = 800;
-		public static readonly UInt16[] BONUS_SCORE = new [] { BONUS1, BONUS2, BONUS3, BONUS4 };
+		public static readonly UInt16[] BONUS_SCORE = new UInt16[] { 100, 200, 400, 800 };
 		public const UInt32 MAX_HIGH_SCORE = 9999999;
 		public const UInt32 DEF_HIGH_SCORE = 100000;
 		public const UInt32 COMPLETE_ROUND = 5000;

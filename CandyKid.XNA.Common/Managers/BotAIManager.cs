@@ -317,7 +317,6 @@ namespace WindowsGame.Managers
 			{
 				return Direction.Left;
 			}
-
 			return Direction.None;
 		}
 
