@@ -20,7 +20,7 @@ namespace WindowsGame.UnitTests.Managers
 		[Test]
 		public void LoadAllTilesTest()
 		{
-			IDictionary<Byte, Vector2> allBorderTiles = BorderManager.LoadAllTiles(12, 16, 12, 40, 0);
+			IDictionary<Int16, Vector2> allBorderTiles = BorderManager.LoadAllTiles(12, 16, 12, 40, 0);
 			Assert.That(allBorderTiles, Is.Not.Null);
 		}
 		[Test]

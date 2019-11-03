@@ -11,7 +11,7 @@ namespace WindowsGame.Managers
 	{
 		void LoadContent();
 		void LoadContentData(Byte borderGame, Byte borderMenu, Byte borderHigh, Byte popupsWide, Byte popupsHigh, Byte tilesSize, Byte textsSize, Byte gameOffsetX);
-		IDictionary<Byte, Vector2> LoadAllTiles(Byte borderGame, Byte borderMenu, Byte borderHigh, Byte tilesSize, Byte gameOffsetX);
+		IDictionary<Int16, Vector2> LoadAllTiles(Byte borderGame, Byte borderMenu, Byte borderHigh, Byte tilesSize, Byte gameOffsetX);
 		IList<Vector2> LoadAllPopup(Byte borderGame, Byte borderHigh, Byte popupsWide, Byte popupsHigh, Byte tilesSize, Byte gameOffsetX);
 		IList<Vector2> LoadAllStrip(Byte borderGame, Byte borderHigh, Byte popupsWide, Byte popupsHigh, Byte tilesSize, Byte textsSize, Byte gameOffsetX);
 		void UpdateContentData(Boolean useKillTrees, Boolean useOpenExits);
@@ -85,9 +85,9 @@ namespace WindowsGame.Managers
 			}
 		}
 
-		public IDictionary<Byte, Vector2> LoadAllTiles(Byte borderGame, Byte borderMenu, Byte borderHigh, Byte tilesSize, Byte gameOffsetX)
+		public IDictionary<Int16, Vector2> LoadAllTiles(Byte borderGame, Byte borderMenu, Byte borderHigh, Byte tilesSize, Byte gameOffsetX)
 		{
-			var allBorderTiles = new Dictionary<Byte, Vector2>();
+			var allBorderTiles = new Dictionary<Int16, Vector2>();
 
 			Byte key = 0;
 			Byte height = 0;
@@ -217,7 +217,7 @@ namespace WindowsGame.Managers
 			}
 		}
 
-		private IDictionary<Byte, Vector2> AllBorderTiles { get; set; }
+		private IDictionary<Int16, Vector2> AllBorderTiles { get; set; }
 		private IList<Vector2> AllPopupsTiles { get; set; }
 		private IList<Vector2> AllPopupsStrip { get; set; }
 	}

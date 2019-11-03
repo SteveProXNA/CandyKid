@@ -25,8 +25,8 @@ namespace WindowsGame.Managers
 		Rectangle[] EnemyXyzRectangle { get; }
 
 		IDictionary<ArrowType, Rectangle> AllArrowRectangles { get; }
-		IDictionary<Byte, Rectangle> AllBonusRectangles { get; }
-		IDictionary<Byte, Rectangle> AllCandyRectangles { get; }
+		IDictionary<Int16, Rectangle> AllBonusRectangles { get; }
+		IDictionary<Int16, Rectangle> AllCandyRectangles { get; }
 	}
 
 	public class ImageManager : IImageManager
@@ -51,7 +51,7 @@ namespace WindowsGame.Managers
 
 			// Bonus.
 			const Byte bonusNumber = Constants.BONUS_NUMBER;
-			AllBonusRectangles = new Dictionary<byte, Rectangle>(bonusNumber);
+			AllBonusRectangles = new Dictionary<Int16, Rectangle>(bonusNumber);
 
 			Byte incBonus = (Byte)(bonusSize / tileRatio);
 			for (Byte key = 0; key < bonusNumber / 2; ++key)
@@ -65,7 +65,7 @@ namespace WindowsGame.Managers
 
 			// Candy.
 			const Byte candyNumber = Constants.CANDY_NUMBER;
-			AllCandyRectangles = new Dictionary<Byte, Rectangle>(candyNumber);
+			AllCandyRectangles = new Dictionary<Int16, Rectangle>(candyNumber);
 
 			Byte incCandy = (Byte)(candySize / tileRatio);
 			for (Byte key = 0; key < theTileRatio; ++key)
@@ -133,7 +133,7 @@ namespace WindowsGame.Managers
 		public Rectangle[] EnemyXyzRectangle { get; private set; }
 
 		public IDictionary<ArrowType, Rectangle> AllArrowRectangles { get; private set; }
-		public IDictionary<Byte, Rectangle> AllBonusRectangles { get; private set; }
-		public IDictionary<Byte, Rectangle> AllCandyRectangles { get; private set; }
+		public IDictionary<Int16, Rectangle> AllBonusRectangles { get; private set; }
+		public IDictionary<Int16, Rectangle> AllCandyRectangles { get; private set; }
 	}
 }

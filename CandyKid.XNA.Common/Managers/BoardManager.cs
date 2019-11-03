@@ -31,7 +31,7 @@ namespace WindowsGame.Managers
 		Char ConvertTileToChar(TileType tileType);
 		void Draw();
 		void Draw(Boolean locked);
-		//void Draw(TileType[,] levelData, IDictionary<Byte, Vector2> tilesData, IDictionary<Byte, Rectangle> rectsData);
+		//void Draw(TileType[,] levelData, IDictionary<Int16, Vector2> tilesData, IDictionary<Int16, Rectangle> rectsData);
 
 		Vector2 GetCandyVector2(Byte key);
 		Vector2 GetBonusVector2(Byte key);
@@ -40,9 +40,9 @@ namespace WindowsGame.Managers
 		Byte BonusCount { get; }
 		TileType[,] BoardData { get; }
 		
-		IDictionary<Byte, Vector2> BoardBasePositions { get; }
-		IDictionary<Byte, Vector2> BoardTilePositions { get; }
-		IDictionary<Byte, Rectangle> BoardRectangles { get; }
+		IDictionary<Int16, Vector2> BoardBasePositions { get; }
+		IDictionary<Int16, Vector2> BoardTilePositions { get; }
+		IDictionary<Int16, Rectangle> BoardRectangles { get; }
 	}
 
 	public class BoardManager : IBoardManager
@@ -59,9 +59,9 @@ namespace WindowsGame.Managers
 		{
 			boardRoot = root;
 
-			BoardBasePositions = new Dictionary<Byte, Vector2>();
-			BoardTilePositions = new Dictionary<Byte, Vector2>();
-			BoardRectangles = new Dictionary<Byte, Rectangle>();
+			BoardBasePositions = new Dictionary<Int16, Vector2>();
+			BoardTilePositions = new Dictionary<Int16, Vector2>();
+			BoardRectangles = new Dictionary<Int16, Rectangle>();
 
 			validWide = theValidWide;
 			validHigh = theValidHigh;
@@ -400,8 +400,8 @@ namespace WindowsGame.Managers
 		public Byte BonusCount { get; private set; }
 		public Byte CandyCount { get; private set; }
 		public TileType[,] BoardData { get; private set; }
-		public IDictionary<Byte, Vector2> BoardBasePositions { get; private set; }
-		public IDictionary<Byte, Vector2> BoardTilePositions { get; private set; }
-		public IDictionary<Byte, Rectangle> BoardRectangles { get; private set; }
+		public IDictionary<Int16, Vector2> BoardBasePositions { get; private set; }
+		public IDictionary<Int16, Vector2> BoardTilePositions { get; private set; }
+		public IDictionary<Int16, Rectangle> BoardRectangles { get; private set; }
 	}
 }
